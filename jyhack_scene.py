@@ -1,6 +1,8 @@
 import os
 import json
 def main():
+	os.makedirs("./data_export/scene_data", exist_ok=True)
+	
 	with open('res/S1.GRP', 'rb') as fp:
 		out = ""
 		for idx in range(100):
@@ -19,4 +21,5 @@ def main():
 			a.write(json.dumps(md))
 			a.close()
 if __name__ == "__main__":
+	
     main()

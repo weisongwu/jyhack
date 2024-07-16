@@ -51,6 +51,8 @@ def read_idx():
             cur = text
     return index_table
 def main():
+    os.makedirs("./img_export/smp", exist_ok=True)
+    
     null_color = [0,0,0,0]
     colors = col()
     index_table = read_idx()
